@@ -5,6 +5,6 @@
 
 <mapper namespace="com.ishift.newb.dao.CustomerDao">
 	<select id="getName" resultType="java.lang.String">
-		SELECT NAME FROM KKH WHERE ID = 3
+		SELECT NAME FROM KKH WHERE ADDRESS='서울'
 	</select>
 </mapper>
