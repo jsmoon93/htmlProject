@@ -1,15 +1,23 @@
 package com.ishift.newb.web;
 
-import org.springframework.web.bind.annotation.GetMapping;
+import javax.annotation.Resource;
+
 import org.springframework.web.bind.annotation.RestController;
+
+import com.ishift.newb.dao.CustomerDao;
 
 @RestController
 public class CustomerController {
 	
-	@GetMapping("/test")
-	public String projectInfo() {
-		return "Project name is NewB.";
-	}
+//	@GetMapping("/test")
+//	public String projectInfo() {
+//		return "Project name is NewB.";
+//	}
+	
+	@Resource
+	private CustomerDao customerDao;
+	
+	
 	
 	
 	
